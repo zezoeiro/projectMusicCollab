@@ -12,7 +12,13 @@
     <!-- Sidebar -->
     <aside class="w-64 bg-[#0a0a0a] border-r border-[#1f1f1f] flex flex-col p-4">
       <div class="flex items-center gap-2 mb-8">
-        <div class="w-8 h-8 bg-[#1DB954] rounded-full shadow-[0_0_10px_#1DB954]"></div>
+        <div class="relative w-8 h-8 bg-[#1DB954] rounded-full shadow-[0_0_10px_#1DB954]">
+  <img 
+    src="/img/IconMusic.webp" 
+    class="absolute inset-0 w-full h-full object-contain"
+  />
+</div>
+
       </div>
 
       <nav class="flex-1">
@@ -23,42 +29,19 @@
               <span>🏠</span> Dashboard
             </a>
           </li>
-
           <li>
-            <a href="#" class="flex items-center gap-3 p-2 rounded-lg hover:bg-[#1a1a1a] hover:text-[#1DB954] transition">
-              👥 Team
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="flex items-center gap-3 p-2 rounded-lg hover:bg-[#1a1a1a] hover:text-[#1DB954] transition">
-              🗂 Projects
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="flex items-center gap-3 p-2 rounded-lg hover:bg-[#1a1a1a] hover:text-[#1DB954] transition">
-              📅 Calendar
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="flex items-center gap-3 p-2 rounded-lg hover:bg-[#1a1a1a] hover:text-[#1DB954] transition">
-              📄 Documents
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="flex items-center gap-3 p-2 rounded-lg hover:bg-[#1a1a1a] hover:text-[#1DB954] transition">
-              📊 Reports
-            </a>
-          </li>
-
+            <a href="#" class="flex items-center gap-3 p-2 rounded-lg hover:bg-[#1a1a1a] hover:text-[#1DB954] text-gray-400 transition">
+              🎵 Playlists
+           </a>
+                     <li>
+            <a href="#" class="flex items-center gap-3 p-2 rounded-lg hover:bg-[#1a1a1a] hover:text-[#1DB954] text-gray-400 transition">
+              ⭐ Favorites
+           </a>
         </ul>
       </nav>
 
       <a href="#" class="mt-auto flex items-center gap-3 p-2 rounded-lg hover:bg-[#1a1a1a] hover:text-[#1DB954] text-gray-400 transition">
-        ⚙️ Settings
+        ⚙ Settings
       </a>
     </aside>
 
@@ -69,8 +52,8 @@
 
         <input
           type="text"
-          placeholder="Search"
-          class="bg-[#1a1a1a] border border-[#2a2a2a] px-4 py-2 rounded-lg w-64 focus:outline-none focus:ring-2 focus:ring-[#1DB954]"
+          placeholder="O que você quer ouvir?"
+          class="bg-[#1a1a1a] border border-[#2a2a2a] px-4 py-2 rounded-lg w-96 focus:outline-none focus:ring-2 focus:ring-[#1DB954]"
         />
 
         <div class="flex items-center gap-6">
