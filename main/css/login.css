@@ -1,0 +1,117 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #121212; 
+}
+
+
+
+.container {
+    width: 350px;
+    background: #181818; 
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.4);
+    text-align: center;
+}
+
+
+
+.container h2 {
+    margin-bottom: 18px;
+    font-size: 26px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+
+
+.container input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: 1px solid #404040;
+    background: #2a2a2a;
+    color: #fff;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.container input::placeholder {
+    color: #8f8f8f;
+}
+
+.container input:focus {
+    border-color: #1DB954; 
+    background: #333333;
+}
+
+
+
+#btnLogin {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    background: #1DB954;  
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.25s ease;
+    transform: translateY(0);
+}
+
+
+#btnLogin:hover {
+    background: #1ed760;
+}
+
+/* Efeito "pressionar" */
+#btnLogin:active {
+    transform: translateY(2px);
+}
+
+
+
+#msgLogin {
+    color: #ff4d4d;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+
+.container a {
+    display: inline-block;
+    margin-top: 18px;
+    color: #1DB954;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.container a:hover {
+    color: #1ed760;
+}
+
+
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+        padding: 28px;
+    }
+}
