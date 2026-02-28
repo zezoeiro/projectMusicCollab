@@ -1,0 +1,214 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #121212; 
+}
+
+
+
+.container {
+    width: 350px;
+    background: #181818; 
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.4);
+    text-align: center;
+}
+
+
+
+.container h2 {
+    margin-bottom: 18px;
+    font-size: 26px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+
+
+.container input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: 1px solid #404040;
+    background: #2a2a2a;
+    color: #fff;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.container input::placeholder {
+    color: #8f8f8f;
+}
+
+.container input:focus {
+    border-color: #1DB954; 
+    background: #333333;
+}
+
+
+
+#btnLogin {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    background: #1DB954;  
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.25s ease;
+    transform: translateY(0);
+}
+
+
+#btnLogin:hover {
+    background: #1ed760;
+}
+
+/* Efeito "pressionar" */
+#btnLogin:active {
+    transform: translateY(2px);
+}
+
+
+
+#msgLogin {
+    color: #ff4d4d;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+
+.container a {
+    display: inline-block;
+    margin-top: 18px;
+    color: #1DB954;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.container a:hover {
+    color: #1ed760;
+}
+
+
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+        padding: 28px;
+    }
+}
+
+
+
+/*  dark mode */
+
+
+
+
+
+
+
+body.dark-mode {
+    background: #ffffff; 
+    color: #1a1a1a;     
+}
+
+
+body.dark-mode .container {
+    background: #f2f2f2; 
+    color: #1a1a1a;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.1);
+}
+
+
+body.dark-mode .container h2 {
+    color: #000000;
+}
+
+
+body.dark-mode .container input {
+    background: #ffffff;
+    color: #000000;
+    border: 1px solid #bfbfbf;
+}
+
+body.dark-mode .container input::placeholder {
+    color: #7a7a7a;
+}
+
+body.dark-mode .container input:focus {
+    background: #ffffff;
+    border-color: #1DB954;
+}
+
+
+body.dark-mode #btnLogin {
+    background: #1DB954;
+    color: #ffffff;
+}
+
+body.dark-mode #btnLogin:hover {
+    background: #1ed760;
+}
+
+
+body.dark-mode .container a {
+    color: #1DB954;
+}
+
+body.dark-mode .container a:hover {
+    color: #1ed760;
+}
+
+
+
+
+
+#btn-darkMode {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+
+    background: #1DB954;
+    color: #ffffff;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#btn-darkMode:hover {
+    background: #1ed760;
+}
+
+/* white mode  */
+body.dark-mode #btn-darkMode {
+    background: #ffffff;
+    color: #1DB954;
+    border: 1px solid #1DB954;
+}
+
+body.dark-mode #btn-darkMode:hover {
+    background: #e8e8e8;
+}
